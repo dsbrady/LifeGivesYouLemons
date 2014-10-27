@@ -77,9 +77,9 @@
 		8895F17919FECEB100304482 /* Life Gives You Lemons */ = {
 			isa = PBXGroup;
 			children = (
+				8895F18019FECEB100304482 /* Main.storyboard */,
 				8895F17C19FECEB100304482 /* AppDelegate.swift */,
 				8895F17E19FECEB100304482 /* ViewController.swift */,
-				8895F18019FECEB100304482 /* Main.storyboard */,
 				8895F18319FECEB100304482 /* Images.xcassets */,
 				8895F18519FECEB100304482 /* LaunchScreen.xib */,
 				8895F17A19FECEB100304482 /* Supporting Files */,
