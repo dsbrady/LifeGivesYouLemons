@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		889560421A0016550041210A /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889560411A0016550041210A /* Customer.swift */; };
+		889560441A0017CF0041210A /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889560431A0017CF0041210A /* Factory.swift */; };
 		8895F17D19FECEB100304482 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8895F17C19FECEB100304482 /* AppDelegate.swift */; };
 		8895F17F19FECEB100304482 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8895F17E19FECEB100304482 /* ViewController.swift */; };
 		8895F18219FECEB100304482 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8895F18019FECEB100304482 /* Main.storyboard */; };
 		8895F18419FECEB100304482 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8895F18319FECEB100304482 /* Images.xcassets */; };
 		8895F18719FECEB100304482 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8895F18519FECEB100304482 /* LaunchScreen.xib */; };
 		8895F19319FECEB100304482 /* Life_Gives_You_LemonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8895F19219FECEB100304482 /* Life_Gives_You_LemonsTests.swift */; };
+		88F50AE71A0038A80062D92C /* Lemonade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F50AE61A0038A80062D92C /* Lemonade.swift */; };
+		88F50AE91A00396A0062D92C /* LemonadeBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F50AE81A00396A0062D92C /* LemonadeBrain.swift */; };
+		88F50AEB1A00D8430062D92C /* LemonadeStand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F50AEA1A00D8430062D92C /* LemonadeStand.swift */; };
+		88F50AEF1A00E4840062D92C /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F50AEE1A00E4840062D92C /* Day.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		889560411A0016550041210A /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		889560431A0017CF0041210A /* Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
 		8895F17719FECEB100304482 /* Life Gives You Lemons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Life Gives You Lemons.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8895F17B19FECEB100304482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8895F17C19FECEB100304482 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +44,10 @@
 		8895F18C19FECEB100304482 /* Life Gives You LemonsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Life Gives You LemonsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8895F19119FECEB100304482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8895F19219FECEB100304482 /* Life_Gives_You_LemonsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Life_Gives_You_LemonsTests.swift; sourceTree = "<group>"; };
+		88F50AE61A0038A80062D92C /* Lemonade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lemonade.swift; sourceTree = "<group>"; };
+		88F50AE81A00396A0062D92C /* LemonadeBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LemonadeBrain.swift; sourceTree = "<group>"; };
+		88F50AEA1A00D8430062D92C /* LemonadeStand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LemonadeStand.swift; sourceTree = "<group>"; };
+		88F50AEE1A00E4840062D92C /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +91,12 @@
 			children = (
 				8895F18019FECEB100304482 /* Main.storyboard */,
 				8895F17C19FECEB100304482 /* AppDelegate.swift */,
+				889560411A0016550041210A /* Customer.swift */,
+				88F50AEE1A00E4840062D92C /* Day.swift */,
+				889560431A0017CF0041210A /* Factory.swift */,
+				88F50AE61A0038A80062D92C /* Lemonade.swift */,
+				88F50AE81A00396A0062D92C /* LemonadeBrain.swift */,
+				88F50AEA1A00D8430062D92C /* LemonadeStand.swift */,
 				8895F17E19FECEB100304482 /* ViewController.swift */,
 				8895F18319FECEB100304482 /* Images.xcassets */,
 				8895F18519FECEB100304482 /* LaunchScreen.xib */,
@@ -212,8 +230,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88F50AEB1A00D8430062D92C /* LemonadeStand.swift in Sources */,
+				889560441A0017CF0041210A /* Factory.swift in Sources */,
+				889560421A0016550041210A /* Customer.swift in Sources */,
 				8895F17F19FECEB100304482 /* ViewController.swift in Sources */,
+				88F50AE91A00396A0062D92C /* LemonadeBrain.swift in Sources */,
+				88F50AEF1A00E4840062D92C /* Day.swift in Sources */,
 				8895F17D19FECEB100304482 /* AppDelegate.swift in Sources */,
+				88F50AE71A0038A80062D92C /* Lemonade.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +431,7 @@
 				8895F19819FECEB100304482 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8895F19919FECEB100304482 /* Build configuration list for PBXNativeTarget "Life Gives You LemonsTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +440,7 @@
 				8895F19B19FECEB100304482 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
