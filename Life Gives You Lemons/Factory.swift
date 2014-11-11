@@ -30,7 +30,7 @@ class Factory {
 		var lemonade = Lemonade(numberOfLemons: numberOfLemons, numberOfIceCubes: numberOfIceCubes, acidity: 0.0, glassesAvailable: 0)
 		lemonade.acidity = LemonadeBrain.calculateAcidity(lemonade)
 		lemonade.glassesAvailable = LemonadeBrain.calculateNumberOfGlasses(lemonade)
-println("glasses: \(lemonade.glassesAvailable)")
+
 		return lemonade
 	}
 }

@@ -10,28 +10,37 @@ import Foundation
 
 class LemonadeStand {
 	// stats properties
-	var currentMoney = 10
+	var currentMoney = 10.00
 	var currentLemons = 1
 	var currentIceCubes = 1
 	var lemonsToBePurchased = 0
 	var iceCubesToBePurchased = 0
 	var lemonsToBeMixed = 0
 	var iceCubesToBeMixed = 0
-	var lifetimeSales = 0
+	var lifetimeSalesRevenue = 0.00
+	var lifetimeSalesNumber = 0
 
 	// Constants
-	let kLemonadePrice = 1
+	let kLemonadePrice = 1.00
 
-	func calculateSales(customers:[Customer], lemonade:Lemonade) -> Int {
-		var sales = 0
+	func calculateSales(customers:[Customer], lemonade:Lemonade) -> Double {
+		var sales = 0.00
+		var glassesSold = 0
 
 		for customer in customers {
 			if LemonadeBrain.willCustomerPurchase(customer, lemonade:lemonade) {
 				sales += self.kLemonadePrice
+				glassesSold++
+
+				// If we've sold out, just break out of the loop
+				if lemonade.glassesAvailable == glassesSold {
+					break;
+				}
 			}
 		}
 
-		self.lifetimeSales += sales
+		self.lifetimeSalesRevenue += sales
+		self.lifetimeSalesNumber += glassesSold
 
 		return sales
 	}
@@ -48,7 +57,7 @@ class LemonadeStand {
 		var day = Day()
 		day.sales = calculateSales(customers, lemonade: lemonade)
 		day.numberOfCustomers = customers.count
-		day.numberSold = day.sales / self.kLemonadePrice
+		day.numberSold = Int(day.sales / self.kLemonadePrice)
 
 		self.currentMoney += day.sales
 		self.currentLemons -= self.lemonsToBeMixed

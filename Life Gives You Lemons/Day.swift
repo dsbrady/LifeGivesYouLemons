@@ -11,7 +11,7 @@ import Foundation
 struct Day {
 	var numberSold = 0
 	var numberOfCustomers = 0
-	var sales = 0
+	var sales = 0.00
 	var temperature = 75
 	var isRaining = false
 }

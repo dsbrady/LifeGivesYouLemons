@@ -10,6 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+	/*
+		TODO:
+		* Add weather (temp and raining) and have that affect sales (customer has minimum temp to buy, and rain reduces likelihood by 50% ?)
+		* Change the price/sales to be doubles instead of ints
+		* Adjust the price per glass
+	*/
+
 	// view containers
 	var statsContainer: UIView!
 	var purchaseContainer: UIView!
@@ -55,13 +62,12 @@ class ViewController: UIViewController {
 	let kThird:CGFloat = 1.0/3.0
 	let kFourth:CGFloat = 1.0/4.0
 	let kSixth:CGFloat = 1.0/6.0
-//	let kEighth:CGFloat = 1.0/8.0
 	let kTwelfth:CGFloat = 1.0/12.0
 	let kTwentyFourth:CGFloat = 1.0/24.0
 
 	// Costs / Revenues
-	let kLemonCost = 2
-	let kIceCubeCost = 1
+	let kLemonCost = 2.00
+	let kIceCubeCost = 1.00
 
 	// Fonts / Colors
 	let kLabelFont = UIFont(name: "Menlo-Bold", size:18)
@@ -453,7 +459,7 @@ class ViewController: UIViewController {
 		updateStatsContainerView()
 
 		if isGameOver() {
-			showAlertWithText(header: "Game Over!", message: "You ran out of lemons and can't afford to buy more. Your stand is out of business! You sold a total of $\(self.lemonadeStand.lifetimeSales) in lemonade. Press \"OK\" to start over.")
+			showAlertWithText(header: "Game Over!", message: "You ran out of lemons and can't afford to buy more. Your stand is out of business! You sold a total of \(self.lemonadeStand.lifetimeSalesNumber) glasses for $\(self.lemonadeStand.lifetimeSalesRevenue). Press \"OK\" to start over.")
 		}
 		else {
 			showAlertWithText(header: "Day Complete", message: "You had \(self.day.numberOfCustomers) customer(s) who bought \(self.day.numberSold) lemonade(s), for total sales of $\(self.day.sales)")
